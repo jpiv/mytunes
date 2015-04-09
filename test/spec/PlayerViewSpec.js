@@ -44,6 +44,7 @@ describe('PlayerView', function() {
       // play the first song
       songQueue.playFirst();
       expect(appView.playerView.model).to.equal(firstSong);
+      debugger;
       // Simulate the end of the first song
       $(appView.playerView.el).trigger('ended');
       expect(appView.playerView.model).to.equal(secondSong);
