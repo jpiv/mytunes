@@ -2,9 +2,10 @@
 var SongQueueEntryView = Backbone.View.extend({
   // your code here!
   initialize: function() {
-    this.collection.on('enqueue', function() {
-      console.log('test');
-    })
+
   },
 
+render: function() {
+    return this.$el;
+  }
 });
