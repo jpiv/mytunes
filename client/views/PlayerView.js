@@ -9,7 +9,7 @@ var PlayerView = Backbone.View.extend({
   },
 
   events: {
-    "ended audio" : "songEnded",
+    "ended" : "songEnded",
   },
 
   songEnded: function ()
