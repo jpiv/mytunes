@@ -9,10 +9,11 @@ var SongQueue = Songs.extend({
       },this);
 
     this.on('ended', function () {
-         this.at(0).trigger('dequeue', this.at(0));
-         if (this.length > 0) {
-          this.playFirst();
+
+         if (this.length >= 1) {
+          this.playNext();
         }
+
     }, this);
 
     this.on('dequeue', function  (song) {
@@ -21,6 +22,11 @@ var SongQueue = Songs.extend({
     }, this);
 
 
+  },
+
+  playNext: function () {
+    this.shift();
+    this.playFirst();
   },
 
   playFirst: function() {
