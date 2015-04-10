@@ -1,0 +1,22 @@
+li {
+  background-color: rgba(156,345,43,.75);
+  width: 300px;
+}
+ul {
+
+}
+
+td {
+ color:rgb(156,165,173);
+ background-color: rgba(26,45,93,.75);
+}
+
+body {
+  background-image: url('http://i.ytimg.com/vi/x_vQYXKUr_0/maxresdefault.jpg');
+}
+
+div {
+  position: fixed;
+  top: 45%;
+  left: 35%;
+}
